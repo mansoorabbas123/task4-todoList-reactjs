@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #352f5b;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.search {
+  width: 20.5rem;
+  padding: 0.7rem 0.5rem;
+  background-color: #2d2755;
+  border: none;
+  color: #fff;
+}
+
+#todos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todos-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  margin-top: 5rem;
+}
+
+.todos-wrapper h2 {
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+/* .add-todo {
+  width: 20.5rem;
+  padding: 0.7rem 0.5rem;
+  background-color: #2d2755;
+  border: none;
+} */
+
+.todos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #463f72;
+}
+
+.todo-item i:hover {
+  cursor: pointer;
 }
