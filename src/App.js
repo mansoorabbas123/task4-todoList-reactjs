@@ -50,6 +50,7 @@ function App() {
 
   const getData = async () => {
     setLoader(true);
+    setSearchTodo("");
     try {
       const data = await getDocs(userCollectionRef);
       if (data) {
@@ -70,7 +71,7 @@ function App() {
     <div id="todos-container">
       <div className="todos-wrapper">
         <h2>Todo List</h2>
-        <Search filterTodo={filterTodo} />
+        <Search filterTodo={filterTodo} searchTodo={searchTodo} />
         <TodoList todos={todos} deletTodo={deletTodo} searchTodo={searchTodo} />
         {loader ? (
           <TailSpin color="#fff" height={50} width={40} />

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = ({ filterTodo }) => {
+const Search = ({ filterTodo, searchTodo }) => {
   return (
     <div>
       <form>
@@ -9,6 +9,7 @@ const Search = ({ filterTodo }) => {
           type="text"
           onChange={(e) => filterTodo(e.target.value)}
           placeholder="Search Todo..."
+          value={searchTodo}
         />
       </form>
     </div>
